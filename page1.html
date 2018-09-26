@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Shopping Arena</title>
+<link href="" rel="stylesheet" type="text/css" media="screen" />  
+    <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    .tbl {width: 640px;}
+    .tbl tr:hover {background-color: lightblue;}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <ul class="nav nav-tabs nav-justified">
+    <li class="active"><a href="#">Buy product</a></li>
+    
+    <li><a href="account.php">My account</a></li>
+    <li><a href="signout.php">Signout</a></li>
+  </ul>
+	<br><br><br><br><br>
+	<form name="f2" method="post" action="payment.php" id="f1">
+         <div class="CSSTableGenerator" >
+	<table style="text-align: left; width: 1019px; height: 119px;"
+ border="1" cellpadding="2" cellspacing="2" class="tbl">
+  <tbody>
+    <tr>
+      <td style="width: 200px;">product Type</td>
+      <td style="width: 200px;">Product Name</td>
+      <td style="width: 200px;">Price</td>
+      <td style="width: 200px;">Image</td>
+      <td style="width: 200px;">Order</td>
+    </tr>
+    <tr>
+      <td>Electronics</td>
+      <td>Bulb </td>
+      <td>Rs.100</td>
+      <td><img src="bulb.jpg"></td>
+      <td> <input type="radio" name="product" value="bulb" checked>order</td>
+    </tr>
+    <tr>
+      <td>Electronics </td>
+      <td>Tube light</td>
+      <td>Rs.150</td>
+      <td><img src="tube.jpg"></td>
+       <td> <input type="radio" name="product" value="tubelight">order</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<table style="text-align: left; width: 1019px; height: 119px;"
+ border="1" cellpadding="2" cellspacing="2" class="tbl">
+  <tbody>
+    <tr>
+      <td style="width: 200px;">Product Type</td>
+      <td style="width: 200px;">Product Name</td>
+      <td style="width: 200px;">Price</td>
+      <td style="width: 200px;">Image</td>
+      <td style="width: 200px;">Order</td>
+    </tr>
+    <tr>
+      <td>Food</td>
+      <td>Meal(Thali)</td>
+      <td>Rs.100</td>
+      <td><img src="thali.jpg"></td>
+      <td> <input type="radio" name="product" value="thali">order</td>
+    </tr>
+    <tr>
+      <td style="width: 200px;">Food</td>
+      <td>Snacks(as per availability)</td>
+      <td>Rs.40</td>
+      <td><img src="snacks.jpg"></td>
+      <td> <input type="radio" name="product" value="snacks">order</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<table style="text-align: left; width: 1019px; height: 119px;"
+ border="1" cellpadding="2" cellspacing="2" class="tbl">
+  <tbody>
+    <tr>
+      <td style="width: 200px;">Product Type</td>
+      <td style="width: 200px;">Product Name</td>
+      <td style="width: 200px;">Price</td>
+      <td style="width: 200px;">Image</td>
+      <td style="width: 200px;">Order</td>
+    </tr>
+    <tr>
+      <td>Clothes</td>
+      <td>T shirts(3x combo pack)</td>
+      <td>Rs.299</td>
+      <td><img src="tshirt.jpg"></td>
+      <td> <input type="radio" name="product" value="shirt">order</td>
+    </tr>
+    <tr>
+      <td style="width: 200px;">Clothes</td>
+      <td>Jeans</td>
+      <td>Rs.199</td>
+      <td><img src="jeans.jpg"></td>
+      <td> <input type="radio" name="product" value="jeans">order</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<table style="text-align: left; width: 1019px; height: 119px;"
+ border="1" cellpadding="2" cellspacing="2" class="tbl">
+  <tbody>
+    <tr>
+      <td style="width: 200px;">Product Type</td>
+      <td style="width: 200px;">Product Name</td>
+      <td style="width: 200px;">Price</td>
+      <td style="width: 200px;">Image</td>
+      <td style="width: 200px;">Order</td>
+    </tr>
+    <tr>
+      <td>Books</td>
+      <td>TE-comps(4 subject reference books)</td>
+      <td>Rs.400</td>
+      <td><img src="tebooks.jpg"></td>
+      <td> <input type="radio" name="product" value="te_books">order</td>
+    </tr>
+    <tr>
+      <td style="width: 200px;">Books</td>
+      <td>BE-comps(4 subject reference books)</td>
+      <td>Rs.400</td>
+      <td><img src="bebooks.jpg"></td>
+      <td> <input type="radio" name="product" value="be_books">order</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<br>
+<h4>Select payment mode</h4>
+<input type="radio" name="payment" value="COD" checked>COD
+<br>
+<input type="radio" name="payment" value="Credit">Credit Card
+<br>
+<input type="radio" name="payment" value="monthly">Monthly Billing
+<br>
+<input type="submit" value="submit">
+</form>
+</div>
+</div>
+</body>
+</html>
